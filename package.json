@@ -5,7 +5,8 @@
   "main": "dist/server.js",
   "scripts": {
     "start": "tsc && node dist/server.js",
-    "test": "jest --no-cache --watchAll",
+    "test": "jest --no-cache",
+    "test-watch": "jest --no-cache --watchAll",
     "lint": "eslint . --ext .ts",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "prettier-watch": "onchange 'src/**/*.ts' -- prettier --write {{changed}}"
