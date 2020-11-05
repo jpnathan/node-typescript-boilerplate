@@ -8,11 +8,11 @@ dotenv.config();
 import cors = require('cors');
 const app = express();
 
-app.use(bodyParser.json())
-app.use(cors())
+app.use(bodyParser.json());
+app.use(cors());
 
-app.use(resouceExampleRoutes)
+app.use(resouceExampleRoutes);
 
 app.listen(process.env.PORT, () => {
-  return console.log(`server is listening on ${process.env.PORT}`);
+	return console.log(`server is listening on ${process.env.PORT}`);
 });
